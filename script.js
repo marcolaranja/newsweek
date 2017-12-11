@@ -9,3 +9,10 @@ var guessField = document.querySelector('.guessField');
 
 var guessCount = 1;
 var resetButton;
+
+function checkGuess() {
+  var userGuess = Number(guessField.value);
+  if (guessCount === 1) {
+    guesses.textContent = 'Previous guesses: ';
+  }
+}
